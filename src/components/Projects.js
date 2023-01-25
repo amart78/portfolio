@@ -1,9 +1,11 @@
 import { Container, Row, Col} from "react-bootstrap"
 import { ProjectCard } from './ProjectCard';
 import TrackVisibility from 'react-on-screen'
-import collabIMG from '../assets/projectsImg/collabImg.png'
+import collabIMG from '../assets/projectsImg/collab.png'
 import itTakesAVillageIMG from '../assets/projectsImg/itTakesAVillage.jpeg'
 import tinderFureverIMG from '../assets/projectsImg/tinderFurever.jpeg'
+import portfolioIMG from '../assets/projectsImg/portfolio.jpeg'
+import tictactoeIMG from '../assets/projectsImg/tictactoe.jpeg'
 
 export const Projects = () => {
 
@@ -33,31 +35,21 @@ export const Projects = () => {
             demo: "https://youtu.be/B6kWoRE_3HA"
         }, 
         {
+            title: "Portfolio Site",
+            imgURL: portfolioIMG,
+            stack: "Tech Stack: React, Javascript, Bootstrap, CSS",
+            description: "Portfolio showcasing skills, projects, & qualifications",
+            github: "https://github.com/amart78/portfolio",
+            demo: ""
+        },
+        {
             title: "TicTacToe",
-            imgURL: tinderFureverIMG,
+            imgURL: tictactoeIMG,
             stack: "Tech Stack: Python",
             description: "Terminal-based 2-player Tic-tac-toe game written in Python",
             github: "https://github.com/amart78/tictactoe",
-            demo: "https://www.youtube.com/watch?v=ypAD_oB4Ems"
-            ,
-        },
-        {
-            title: "CuppaCash",
-            imgURL: tinderFureverIMG,
-            stack: "Tech Stack: Java",
-            description: "CuppaCas is a terminal-based ATM written in Java",
-            github: "https://github.com/amart78/collab",
-            demo: "https://www.youtube.com/watch?v=ypAD_oB4Ems"
-        },
-        {
-            title: "Portfolio Site",
-            imgURL: tinderFureverIMG,
-            stack: "Tech Stack: React, Javascript, Bootstrap, CSS",
-            description: "Portfolio showcasing skills, projects, & qualifications",
-            github: "https://github.com/amart78/collab",
-            demo: "https://www.youtube.com/watch?v=ypAD_oB4Ems"
+            demo: "",
         },   
-
     ];
 
     return (

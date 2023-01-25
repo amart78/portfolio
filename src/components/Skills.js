@@ -19,7 +19,7 @@ import pulumi from '../assets/skillsImg/pulumi.svg'
 
 
 export const Skills = () => {
-// 7 languages
+
     const languages = [
         {
             title: "Python",
@@ -51,7 +51,7 @@ export const Skills = () => {
             imgURL: css3,
         }, 
     ]
-    // 7 technologies
+
     const technologies = [
         {
             title: "React",

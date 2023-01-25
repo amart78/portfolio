@@ -5,7 +5,6 @@ import githubIcon from '../assets/navImg/github.png'
 import linkedinIcon from '../assets/navImg/linkedIn.png'
 import resume from '../assets/Martinez, Alexis - SWE Resume.pdf'
 
-
 export const NavBar = () => {
     
     const [activeLink, setActiveLink] = useState('home')
@@ -29,13 +28,10 @@ export const NavBar = () => {
         setActiveLink(value);
     }
 
-    
-
     return (
             <Navbar expand="lg" className = {scrolled ? "scrolled": ""}>
                 <Container>
                     <Navbar.Brand href="/">
-                        {/* LOGO ATTRIBUTION: Laptop Icon by Jemis Mali @ https://iconscout.com/icon/laptop-coffee-time-system-startup-culture-5 */}
                         <img src={logo} alt='Logo' /> 
                         <span className='name'> Alexis Martinez - SWE </span>
                     </Navbar.Brand>
@@ -53,13 +49,11 @@ export const NavBar = () => {
                                 <a href='https://www.linkedin.com/in/alexis-martinez-swe/' target="_blank" rel="noreferrer"><img src={linkedinIcon} alt = 'LinkedIn' /></a>
                                 <a href='https://github.com/amart78' target="_blank" rel="noreferrer"><img src={githubIcon} alt = 'Github' /></a>
                             </div>
-
                             <a href={resume} target="_blank" rel="noreferrer" download="Martinez, Alexis - SWE Resume.pdf" >
                                 <button >
                                     <span> Download Resume </span>
                                 </button>
                             </a>
-
                         </span>
                     </Navbar.Collapse>
                 </Container>
